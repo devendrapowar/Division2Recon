@@ -1,0 +1,25 @@
+.mat-form-field {
+    padding-right: 20px;
+}
+.admin-table {
+    width: 100%;
+    tr {
+        &.mat-row {
+            cursor: pointer;
+        }
+    }
+    th {
+        padding: 0 10px;
+    }
+    td {
+        width: 112px;
+        padding: 0 10px;
+        word-break: break-all;
+        &.mat-column-onlineFrom {
+            width: 200px;
+        }
+        &.mat-column-sensorData, &.mat-column-processTime, &.mat-column-machineTypeSerial {
+            width: 350px;
+        }
+    }
+}

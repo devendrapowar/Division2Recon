@@ -1,0 +1,48 @@
+<mat-card>
+    <mat-card-title>Process Details</mat-card-title>
+    <mat-card-content>
+        <div class="d-row">
+            <div class="text-group">
+                <label for="customerId">Customer Id</label>
+                <div id="customerId">{{details.customerId}}</div>
+            </div>
+            <div class="text-group">
+                <label for="customerName">Customer Name</label>
+                <div id="customerName">{{details.customerName}}</div>
+            </div>
+        </div>
+        <div class="d-row">
+            <div class="text-group">
+                <label for="machineNr">Machine Nr</label>
+                <div id="machineNr">{{details.machineNr}}</div>
+            </div>
+            <div class="text-group">
+                <label for="machineId">Machine Id</label>
+                <div id="machineId">{{details.machineId}}</div>
+            </div>
+            <div class="text-group">
+                <label for="machineTypeSerial">Machine Type Serial</label>
+                <div id="machineTypeSerial">{{details.machineTypeSerial}}</div>
+            </div>
+        </div>
+        <div class="text-group">
+            <label for="process">Process</label>
+            <div id="process">{{details.process}}</div>
+        </div>
+        <div class="text-group">
+            <label for="processTime">Process Time</label>
+            <div id="processTime">{{details.processTime}}</div>
+        </div>
+        <div class="text-group">
+            <label for="sensorData">Sensor Data</label>
+            <div id="sensorData">{{details.sensorData}}</div>
+        </div>
+        <div class="text-group">
+            <label for="onlineFrom">Online From</label>
+            <div id="onlineFrom">{{details.onlineFrom}}</div>
+        </div>
+    </mat-card-content>
+    <mat-card-actions>
+        <button (click)="back()" mat-raised-button>Close</button>
+    </mat-card-actions>
+</mat-card>
